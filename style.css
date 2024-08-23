@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.calender{
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+    height: 700px;
+    border: 1px solid black; 
+    padding: 16px;   
+  
+}
+.calender >header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.calender .week,.calender .days{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    text-align: center;
+}.calender .week > p{
+    flex: 0 0 50px;
+    font-weight: 800;
+}
+.calender .days .date{
+    flex: 0 0 50px;
+}.calender .days{
+    flex-wrap: wrap;
+}
